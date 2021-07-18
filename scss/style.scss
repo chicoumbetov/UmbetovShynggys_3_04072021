@@ -1,0 +1,22 @@
+@import "_variables";
+
+* {
+    font-family: "Roboto", "Raleway", sans-serif;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+}
+
+.logo {
+    font-family: "Shrikhand";
+}
+
+.principal {
+    background-color: $violet;
+    padding:5px;
+    &__paragraphe {
+        background-color: blue;
+    }
+}

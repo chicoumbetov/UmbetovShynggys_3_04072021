@@ -1,0 +1,23 @@
+* {
+  font-family: "Roboto", "Raleway", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  font-family: "Shrikhand";
+}
+
+.principal {
+  background-color: #9356dc;
+  padding: 5px;
+}
+
+.principal__paragraphe {
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
