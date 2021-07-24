@@ -1,0 +1,54 @@
+* {
+  font-family: "Roboto", "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+html body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.logo {
+  font-family: "Shrikhand";
+}
+
+.principal {
+  background-color: #9356dc;
+  padding: 5px;
+}
+.principal__paragraphe {
+  background-color: blue;
+}
+
+.menu__veignet {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px var(--grisFonce);
+}
+.menu__veignet figure {
+  margin: 0;
+  flex: 1;
+  position: relative;
+}
+.menu__veignet img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.menu__veignet h3 {
+  margin: 1.2rem 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

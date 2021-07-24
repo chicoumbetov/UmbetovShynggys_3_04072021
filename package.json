@@ -1,0 +1,19 @@
+{
+  "name": "p3_umbetov_shynggys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:.css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicoumbetov/resto-menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chicoumbetov/resto-menu/issues"
+  },
+  "homepage": "https://github.com/chicoumbetov/resto-menu#readme"
+}

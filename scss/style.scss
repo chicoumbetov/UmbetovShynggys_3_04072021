@@ -1,17 +1,34 @@
 @import "_variables";
-
 * {
     font-family: "Roboto", "Raleway", sans-serif;
     box-sizing: border-box;
   }
 
-body {
+html body {
+    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
-.logo {
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5px;
+  &__logo {
     font-family: "Shrikhand";
+    padding: 0px 5px;
+    img {
+      height: 50px;
+      // width: 10px;
+      object-fit: cover;
+    }
 }
+}
+
+
 
 .principal {
     background-color: $violet;
@@ -19,4 +36,31 @@ body {
     &__paragraphe {
         background-color: blue;
     }
+}
+
+
+
+.menu {
+
+  &__veignet {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px var(--grisFonce);
+    figure {
+      margin: 0;
+      flex: 1;
+      position:relative;
+    }
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    h3 {
+      margin: 1.2rem 1.5rem;
+    }
+  }
 }
