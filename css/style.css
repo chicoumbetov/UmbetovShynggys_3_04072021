@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", "Raleway", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 html body {
@@ -27,13 +33,8 @@ html body {
 
 .header__logo {
   font-family: "Shrikhand";
-  padding: 5px;
-}
-
-.header__logo img {
-  height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  font-weight: 600;
+  text-align: center;
 }
 
 .header__location {
@@ -72,6 +73,31 @@ html body {
   width: 2rem;
   min-height: 2rem;
   min-width: 2rem;
+}
+
+.header__location__location-input {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.header__location__location-input::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.header__location__location-input:-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.header__location__location-input::-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.header__location__location-input::placeholder {
+  color: black;
+  font-weight: bold;
 }
 
 .header__title {
@@ -129,54 +155,33 @@ html body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
+  margin: 1rem 0 1rem 0.75rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  border-radius: 1.25rem;
+  background-color: #f2f2f2dc;
+  font-size: 1rem;
+  position: relative;
+  padding: 25px;
 }
 
 .header__fonctionnement__f-part__fonctionnement-span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  background-color: #f2f2f2dc;
-  padding: 1rem;
-  border-radius: 0.5rem 0 0 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 0;
-  height: 40px;
-}
-
-.header__fonctionnement__f-part__fonctionnement-span--active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  padding: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 0;
-  height: 40px;
-  border-radius: 0.5rem 0 0 0.5rem;
-  background-color: #f2f2f2dc;
-  color: #9356dc;
-}
-
-.header__fonctionnement__f-part__fonctionnement-span i {
   color: grey;
+  width: 20px;
+  margin: 2px 0 0 15px;
 }
 
 .header__fonctionnement__f-part__span-num {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: absolute;
   color: white;
-  left: -5px;
-  top: 10px;
+  left: -10px;
   z-index: 1;
   background-color: #9356dc;
   -webkit-box-pack: center;
@@ -186,30 +191,13 @@ html body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100%;
-  height: 1.2rem;
-  width: 1.2rem;
-  min-height: 1.2rem;
-  min-width: 1.2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .header__fonctionnement__f-part__fonctionnement-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-left: 2.4rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-
-.header__fonctionnement__f-part p {
-  height: 40px;
-  width: 200px;
-  margin: 0;
-  background-color: #f2f2f2dc;
-  text-align: center;
-  padding-top: 10px;
+  font-weight: 500;
+  margin: 2px 0 0 20px;
 }
 
 .menu {
@@ -228,6 +216,7 @@ html body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -240,8 +229,19 @@ html body {
           box-shadow: 0 0 20px #0000002e;
 }
 
+.menu__veignet__badge {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 1rem;
+  right: 0.75rem;
+  padding: 0.5rem;
+  color: #1b6150;
+  border-radius: 0.25rem;
+}
+
 .menu__veignet figure {
   margin: 0;
+  height: 12rem;
 }
 
 .menu__veignet img {
@@ -256,22 +256,27 @@ html body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 20px 10px 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
-.menu__veignet__description__text {
+.menu__veignet__description__text h3 {
   margin: 0;
+  margin-bottom: 0.25rem;
 }
 
-.menu__veignet__description__text h3, .menu__veignet__description__text p {
+.menu__veignet__description__text p {
   margin: 0;
   padding: 0;
+}
+
+.menu__veignet__description__heart-span {
+  font-size: 25px;
 }
 
 .footer {

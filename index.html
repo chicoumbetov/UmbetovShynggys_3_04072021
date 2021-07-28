@@ -18,15 +18,17 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <img src="images/logo/ohmyfood.png" alt="logo" />
-        </div>
+       <h1 class="header__logo">ohmyfood</h1>
 
         <div class="header__location">
             <span class="header__location__location-span">
               <i class="fas fa-map-marker-alt"></i>
             </span>
-            <p>Paris, Belleville</p>
+            <input 
+                type="text" 
+                placeholder="Paris, Belleville"
+                class="header__location__location-input"
+            />
         </div>
 
         <div class="header__title">
@@ -46,25 +48,25 @@
                 <span class="header__fonctionnement__f-part__fonctionnement-span">
                     <i class="fa fa-mobile"></i>
                 </span>
-                <p class="header__fonctionnement__f-part__fonctionnement-text">Choisissez un restaurant</p>
+                <span class="header__fonctionnement__f-part__fonctionnement-text">Choisissez un restaurant</span>
             </div>
 
             <div class="header__fonctionnement__f-part">
                 <span class="header__fonctionnement__f-part__span-num">2</span>
 
-                <span class="header__fonctionnement__f-part__fonctionnement-span--active">
+                <span class="header__fonctionnement__f-part__fonctionnement-span">
                     <i class="fas fa-list"></i>
                 </span>
-                <p class="header__fonctionnement__f-part__fonctionnement-text">Composez votre menu</p>
+                <span class="header__fonctionnement__f-part__fonctionnement-text">Composez votre menu</span>
             </div>
 
             <div class="header__fonctionnement__f-part">
                 <span class="header__fonctionnement__f-part__span-num">3</span>
-
+    
                 <span class="header__fonctionnement__f-part__fonctionnement-span">
                     <i class="fas fa-store"></i>
                 </span>
-                <p class="header__fonctionnement__f-part__fonctionnement-text">Dégustez au restaurant</p>
+                <span class="header__fonctionnement__f-part__fonctionnement-text">Dégustez au restaurant</span>
             </div>
 
         </div>
@@ -74,7 +76,8 @@
     <section class="menu">
         <h2>Restaurants</h2>
 
-        <div class="menu__veignet item1">
+        <a href="palette" class="menu__veignet item1">
+          <span class="menu__veignet__badge">Nouveau</span>
           <figure>
             <img
               src="images/assets/shashlyk.jpg"
@@ -91,9 +94,10 @@
                 <i class="far fa-heart"></i>
             </span>
           </div>
-        </div>
+        </a>
 
         <div class="menu__veignet item2">
+          <span class="menu__veignet__badge">Nouveau</span>
           <figure>
             <img
               src="images/assets/palau2.jpg"
