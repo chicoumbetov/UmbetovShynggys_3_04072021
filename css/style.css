@@ -312,11 +312,18 @@ html body {
 }
 
 .footer {
-  background-color: darkgrey;
+  background-color: #353535;
   padding: 20px;
+  color: #fff;
 }
 
-.footer img {
-  height: 20px;
+.footer__logo {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.footer i {
+  width: 25px;
 }
 /*# sourceMappingURL=style.css.map */
