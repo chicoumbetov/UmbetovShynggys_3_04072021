@@ -338,6 +338,56 @@ img {
   }
 }
 
+@-webkit-keyframes overflow {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes overflow {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .carte {
   background-color: white;
   border-radius: 1rem;
@@ -411,7 +461,7 @@ img {
   display: grid;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1000px) {
   .menu-body__main {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -472,6 +522,43 @@ img {
 .cards__food-card:hover .food-card__validation__check i {
   -webkit-animation: rotate 0.5s 0.1s both;
           animation: rotate 0.5s 0.1s both;
+}
+
+.cards__button {
+  margin: 60px auto;
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+
+.violet {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.violet__button {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background-color: #686868;
+  cursor: pointer;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(175deg, #ff79da, #9356dc);
+}
+
+.violet__button:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
+}
+
+.violet__button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .food-card__texts {
@@ -550,101 +637,6 @@ img {
 }
 
 .food-card__validation__check i {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.cards {
-  padding: 1rem;
-  display: inherit;
-}
-
-.cards:hover__validation {
-  opacity: 1;
-  margin-right: -1rem;
-}
-
-.cards:hover__check-span i {
-  -webkit-animation: rotate 0.5s 0.1s both;
-          animation: rotate 0.5s 0.1s both;
-}
-
-.cards__texts {
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.cards__texts__title {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.cards__texts__description {
-  margin: 0;
-  padding-top: 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.cards__price {
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 600;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-right: 30px;
-}
-
-.cards__validation {
-  background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 0rem;
-  width: 4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.cards__validation__check-span {
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 100px;
-  color: #99e2d0;
-}
-
-.cards__validation__check-span i {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
