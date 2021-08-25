@@ -380,6 +380,7 @@ img {
   background-color: #f6f6f6;
   z-index: 1;
   margin: -4rem auto 0;
+  padding-bottom: 30px;
   position: relative;
 }
 
