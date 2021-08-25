@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Oh my food</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -15,159 +15,185 @@
       src="https://kit.fontawesome.com/72b510f59e.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-<header class="header">
-    <h1 class="header__logo">ohmyfood</h1>
-    <a href="index.html" class="header__arrow-left">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">ohmyfood</h1>
+      <a href="index.html" class="header__arrow-left">
         <i class="fas fa-arrow-left"></i>
-    </a>
-  </header>
-  <main>
-  <img
-        src="images/restaurants/test.jpg"
-        alt="restaurant"
-    />
-    <section class="menu-body">
-      <div class="menu-body__header">  
-        <h2 class="menu-body__header__title">Les délices des sens</h2>
-        <span class="carte__heart">
+      </a>
+    </header>
+    <main>
+      <img src="images/restaurants/test.jpg" alt="restaurant" />
+      <section class="menu-body">
+        <div class="menu-body__header">
+          <h2 class="menu-body__header__title">Les délices des sens</h2>
+          <span class="carte__heart">
             <i class="far fa-heart carte__heart--outline"></i>
             <i class="fas fa-heart carte__heart--full"></i>
-        </span>
-      </div>
+          </span>
+        </div>
 
-      <div class="menu-body__main">
-        <!-- ENTREES-->
-        <div class="cards">
-          <h3  class="cards__title">ENTREES</h3>
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Tartare de thon</h4>
-              <div class="food-card__texts__description">Assaisonné au yuzu</div>
+        <div class="menu-body__main">
+          <!-- ENTREES-->
+          <div class="cards">
+            <h3 class="cards__title">ENTREES</h3>
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Tartare de thon</h4>
+                <div class="food-card__texts__description">
+                  Assaisonné au yuzu
+                </div>
+              </div>
+              <div class="food-card__price">25€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
-            <div class="food-card__price">25€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
+            <!-- Second food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">
+                  Bouchée de homard croustillant
+                </h4>
+                <div class="food-card__texts__description">
+                  Et sa farandole de petits légumes
+                </div>
+              </div>
+              <div class="food-card__price">35€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Velouté de cèpes</h4>
+                <div class="food-card__texts__description">Aux truffes</div>
+              </div>
+              <div class="food-card__price">20€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Second food card -->
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Bouchée de homard croustillant</h4>
-              <div class="food-card__texts__description">Et sa farandole de petits légumes</div>
+
+          <!-- PLATS-->
+          <div class="cards">
+            <h3 class="cards__title">PLATS</h3>
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">
+                  Poulet rôti aux herbes de provence
+                </h4>
+                <div class="food-card__texts__description">
+                  Et sa crème de truffe
+                </div>
+              </div>
+              <div class="food-card__price">40€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
-            <div class="food-card__price">35€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
+
+            <!-- Second food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Langouste rôtie</h4>
+                <div class="food-card__texts__description">
+                  Et ses légumes de saison
+                </div>
+              </div>
+              <div class="food-card__price">35€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Côte de boeuf angus</h4>
+                <div class="food-card__texts__description">
+                  Et sa purée de panais
+                </div>
+              </div>
+              <div class="food-card__price">44€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Third food card -->
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Velouté de cèpes</h4>
-              <div class="food-card__texts__description">Aux truffes</div>
+          <!-- DESSERTS-->
+          <div class="cards">
+            <h3 class="cards__title">DESSERTS</h3>
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Farandole de desserts</h4>
+                <div class="food-card__texts__description">Du chef</div>
+              </div>
+              <div class="food-card__price">18€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
-            <div class="food-card__price">20€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
+
+            <!-- Second food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Crème brulée</h4>
+                <div class="food-card__texts__description">Revisitée</div>
+              </div>
+              <div class="food-card__price">22€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Tiramisu</h4>
+                <div class="food-card__texts__description">A là noisette</div>
+              </div>
+              <div class="food-card__price">23€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- PLATS-->
-        <div class="cards">
-          <h3  class="cards__title">PLATS</h3>
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Poulet rôti aux herbes de provence</h4>
-              <div class="food-card__texts__description">Et sa crème de truffe</div>
-            </div>
-            <div class="food-card__price">40€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
-            </div>
-          </div>
-
-          <!-- Second food card -->
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Langouste rôtie</h4>
-              <div class="food-card__texts__description">Et ses légumes de saison</div>
-            </div>
-            <div class="food-card__price">35€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
-            </div>
-          </div>
-
-          <!-- Third food card -->
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Côte de boeuf angus</h4>
-              <div class="food-card__texts__description">Et sa purée de panais</div>
-            </div>
-            <div class="food-card__price">44€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- DESSERTS-->
-        <div class="cards">
-          <h3  class="cards__title">DESSERTS</h3>
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Farandole de desserts</h4>
-              <div class="food-card__texts__description">Du chef</div>
-            </div>
-            <div class="food-card__price">18€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
-            </div>
-          </div>
-
-          <!-- Second food card -->
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Crème brulée</h4>
-              <div class="food-card__texts__description">Revisitée</div>
-            </div>
-            <div class="food-card__price">22€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
-            </div>
-          </div>
-
-          <!-- Third food card -->
-          <div class="cards__food-card">
-            <div class="food-card__texts">
-              <h4 class="food-card__texts__title">Tiramisu</h4>
-              <div class="food-card__texts__description">A là noisette</div>
-            </div>
-            <div class="food-card__price">23€</div>
-            <div class="food-card__validation">
-              <div class="food-card__validation__check"><i class="fa-check fas"></i></div>
-            </div>
-          </div>
-        </div>
-
-        
-          
-      </div>
-
-      <a class="violet__button cards__button">Commander</a>
-    </section>
-  </main>
+        <a class="violet__button cards__button">Commander</a>
+      </section>
+    </main>
 
     <section class="footer">
-        
-        <span class="footer__logo">ohmyfood</span>
-        <p><i class="fas fa-utensils"></i>  Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>  Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <a href="mailto:contact@ohmyfood.com">Contact</a>
+      <span class="footer__logo">ohmyfood</span>
+      <p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
+      <p><i class="fas fa-hands-helping"></i> Devenir partenaire</p>
+      <p>Mentions légales</p>
+      <a href="mailto:contact@ohmyfood.com">Contact</a>
     </section>
-</body>
+  </body>
+</html>

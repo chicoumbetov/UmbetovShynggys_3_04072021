@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Oh my food</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -15,75 +15,202 @@
       src="https://kit.fontawesome.com/72b510f59e.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <a href="index.html" class="header__fonctionnement__f-part__fonctionnement-span">
-            <i class="fa fa-heart"></i>
-        </a>
-       <h1 class="header__logo">ohmyfood</h1>
-
-
-        <div class="header__fonctionnement">
-            <h3>La note enchantée</h3>
-            <span class="header__fonctionnement__f-part__fonctionnement-span">
-                <i class="fa fa-heart"></i>
-            </span>
-
-        </div>
-        
+      <h1 class="header__logo">ohmyfood</h1>
+      <a href="index.html" class="header__arrow-left">
+        <i class="fas fa-arrow-left"></i>
+      </a>
     </header>
+    <main>
+      <img src="images/restaurants/test.jpg" alt="restaurant" />
+      <section class="menu-body">
+        <div class="menu-body__header">
+          <h2 class="menu-body__header__title">La note enchantée</h2>
+          <span class="carte__heart">
+            <i class="far fa-heart carte__heart--outline"></i>
+            <i class="fas fa-heart carte__heart--full"></i>
+          </span>
+        </div>
 
-    <section class="menu">
-        <h2>Restaurants</h2>
-
-        <a href="palette" class="menu__veignet item1">
-          <div class="menu__veignet__description">
-            <div class="menu__veignet__description__text">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
+        <div class="menu-body__main">
+          <!-- ENTREES-->
+          <div class="cards">
+            <h3 class="cards__title">ENTREES</h3>
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Ravioles de foie gras</h4>
+                <div class="food-card__texts__description">
+                  Accompagnées de leur crème à le truffe
+                </div>
+              </div>
+              <div class="food-card__price">25€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Second food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">
+                  Caviar osciètre
+                </h4>
+                <div class="food-card__texts__description">
+                  Sur blini à la farine de blé noir
+                </div>
+              </div>
+              <div class="food-card__price">35€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
 
-            <span class="menu__veignet__description__heart-span">
-                <i class="far fa-heart"></i>
-            </span>
+            <!-- Third food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Homard et espuma</h4>
+                <div class="food-card__texts__description">Mariné aux zests d'orange</div>
+              </div>
+              <div class="food-card__price">20€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">
+                  Foie gras de canard cuit entier
+                </h4>
+                <div class="food-card__texts__description">
+                  Confiture de figue et pain toasté
+                </div>
+              </div>
+              <div class="food-card__price">40€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
 
-        <div class="menu__veignet item2">
-          <div class="menu__veignet__description">
-            <div class="menu__veignet__description__text">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
+          <!-- PLATS-->
+          <div class="cards">
+            <h3 class="cards__title">PLATS</h3>
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">
+                  Noix de coquilles Saint - Jacques
+                </h4>
+                <div class="food-card__texts__description">
+                  Sur lit de purée de céleri - rave
+                </div>
+              </div>
+              <div class="food-card__price">40€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
             </div>
 
-            <span class="menu__veignet__description__heart-span">
-                <i class="far fa-heart"></i>
-            </span>
+            <!-- Second food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Langoustine poêlée</h4>
+                <div class="food-card__texts__description">
+                  Purée de patate douce
+                </div>
+              </div>
+              <div class="food-card__price">35€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Mijoté de queue de boeuf</h4>
+                <div class="food-card__texts__description">
+                  Et riz sauvage aux zests de citron
+                </div>
+              </div>
+              <div class="food-card__price">44€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DESSERTS-->
+          <div class="cards">
+            <h3 class="cards__title">DESSERTS</h3>
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Macaron noisette et chocolat</h4>
+                <div class="food-card__texts__description">Glace au caramel brun et sel de Guérande</div>
+              </div>
+              <div class="food-card__price">18€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Baba au rhum revisité</h4>
+                <div class="food-card__texts__description">Avec son coulis de citron</div>
+              </div>
+              <div class="food-card__price">22€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third food card -->
+            <div class="cards__food-card">
+              <div class="food-card__texts">
+                <h4 class="food-card__texts__title">Tarte au citron meringuée</h4>
+                <div class="food-card__texts__description">Destructurée</div>
+              </div>
+              <div class="food-card__price">23€</div>
+              <div class="food-card__validation">
+                <div class="food-card__validation__check">
+                  <i class="fa-check fas"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="menu__veignet item3">
-          <div class="menu__veignet__description">
-            <div class="menu__veignet__description__text">
-                <h3>A la française</h3>
-                <p>Cité Rouge</p>
-            </div>
-
-            <span class="menu__veignet__description__heart-span">
-                <i class="far fa-heart"></i>
-            </span>
-          </div>
-        </div>
-
-    </section>
+        <a class="violet__button cards__button">Commander</a>
+      </section>
+    </main>
 
     <section class="footer">
-        
-        <span class="footer__logo">ohmyfood</span>
-        <p><i class="fas fa-utensils"></i>  Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>  Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <a href="mailto:contact@ohmyfood.com">Contact</a>
+      <span class="footer__logo">ohmyfood</span>
+      <p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
+      <p><i class="fas fa-hands-helping"></i> Devenir partenaire</p>
+      <p>Mentions légales</p>
+      <a href="mailto:contact@ohmyfood.com">Contact</a>
     </section>
-</body>
+  </body>
+</html>
