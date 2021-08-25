@@ -157,7 +157,7 @@ html body {
 .header__fonctionnement {
   @media (min-width: 1000px){
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
   }
 }
@@ -169,7 +169,7 @@ html body {
 .resto-part {
   @media (min-width: 1000px){
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 20px;
   }
@@ -375,7 +375,7 @@ img {
   &__main {
     display: grid;
     @media (min-width: 1000px){
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 10px;
     }
 
