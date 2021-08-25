@@ -110,8 +110,14 @@ html body {
       border-radius: 1.25rem;
       background-color: $claireGris;
       font-size: 1rem;
-      position: relative;
+      position: relative; 
       padding: 25px;
+      
+      :hover {
+        i {
+          color: $violet;  
+        }
+      }
       &__fonctionnement-span {
         color: grey;
         width: 20px;
@@ -139,11 +145,42 @@ html body {
   }
 }
 
+.header__fonctionnement__f-part:hover {
+  background-color: lighten($color: #f6f6f6, $amount: 50);
+  box-shadow: .25rem .25rem .5rem #b5b5b5;
+}
+
+.titleFonctionnement {
+  margin-left: 1.5rem;
+}
+
+.header__fonctionnement {
+  @media (min-width: 1000px){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+  }
+}
+
+.titleResto {
+  margin-left: 0.6rem;
+}
+
+.resto-part {
+  @media (min-width: 1000px){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   background-color: $claireGris;
   padding: 20px;
+  margin-top: 1rem;
   &__veignet {
     display: flex;
     position: relative;

@@ -174,6 +174,10 @@ html body {
   padding: 25px;
 }
 
+.header__fonctionnement__f-part :hover i {
+  color: #9356dc;
+}
+
 .header__fonctionnement__f-part__fonctionnement-span {
   color: grey;
   width: 20px;
@@ -205,6 +209,43 @@ html body {
   margin: 2px 0 0 20px;
 }
 
+.header__fonctionnement__f-part:hover {
+  background-color: white;
+  -webkit-box-shadow: .25rem .25rem .5rem #b5b5b5;
+          box-shadow: .25rem .25rem .5rem #b5b5b5;
+}
+
+.titleFonctionnement {
+  margin-left: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .header__fonctionnement {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+
+.titleResto {
+  margin-left: 0.6rem;
+}
+
+@media (min-width: 1000px) {
+  .resto-part {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,6 +256,7 @@ html body {
           flex-direction: column;
   background-color: #f2f2f2dc;
   padding: 20px;
+  margin-top: 1rem;
 }
 
 .menu__veignet {
