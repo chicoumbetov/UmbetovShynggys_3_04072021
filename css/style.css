@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", "Raleway", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -18,15 +17,9 @@ html body {
 
 .header {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -44,16 +37,10 @@ html body {
 
 .header__location {
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #d5d5d5;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -64,15 +51,9 @@ html body {
 .header__location__location-span {
   color: #000;
   margin-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   height: 2rem;
   width: 2rem;
@@ -85,38 +66,16 @@ html body {
   background-color: transparent;
 }
 
-.header__location__location-input::-webkit-input-placeholder {
-  color: black;
-  font-weight: bold;
-}
-
-.header__location__location-input:-ms-input-placeholder {
-  color: black;
-  font-weight: bold;
-}
-
-.header__location__location-input::-ms-input-placeholder {
-  color: black;
-  font-weight: bold;
-}
-
 .header__location__location-input::placeholder {
   color: black;
   font-weight: bold;
 }
 
 .header__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 20px;
   background-color: #f2f2f2dc;
 }
@@ -133,40 +92,27 @@ html body {
 .header__title button {
   color: white;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356dc));
   background: linear-gradient(#FF79DA, #9356dc);
   border: 0 solid transparent;
   height: 40px;
   padding: 10px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   border-radius: 20px;
 }
 
 .header__fonctionnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 20px;
   margin: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .header__fonctionnement__f-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 10px;
   margin: 1rem 0 1rem 0.75rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
-          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   border-radius: 1.25rem;
   background-color: #f2f2f2dc;
   font-size: 1rem;
@@ -185,20 +131,14 @@ html body {
 }
 
 .header__fonctionnement__f-part__span-num {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   color: white;
   left: -10px;
   z-index: 1;
   background-color: #9356dc;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   height: 1.5rem;
   width: 1.5rem;
@@ -211,8 +151,7 @@ html body {
 
 .header__fonctionnement__f-part:hover {
   background-color: white;
-  -webkit-box-shadow: .25rem .25rem .5rem #b5b5b5;
-          box-shadow: .25rem .25rem .5rem #b5b5b5;
+  box-shadow: .25rem .25rem .5rem #b5b5b5;
 }
 
 .titleFonctionnement {
@@ -221,12 +160,9 @@ html body {
 
 @media (min-width: 1000px) {
   .header__fonctionnement {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
   }
 }
 
@@ -236,44 +172,30 @@ html body {
 
 @media (min-width: 1000px) {
   .resto-part {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
     row-gap: 20px;
   }
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #f2f2f2dc;
   padding: 20px;
   margin-top: 1rem;
 }
 
 .menu__veignet {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 20px;
   height: 100%;
   border-radius: 30px;
   background-color: white;
-  -webkit-box-shadow: 0 0 20px #0000002e;
-          box-shadow: 0 0 20px #0000002e;
+  box-shadow: 0 0 20px #0000002e;
 }
 
 .menu__veignet__badge {
@@ -295,20 +217,13 @@ html body {
   border-radius: 30px 30px 0 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .menu__veignet__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   position: relative;
 }
@@ -330,68 +245,26 @@ html body {
 img {
   width: 100%;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-height: 26rem;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes slide-up {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 
 @keyframes slide-up {
   0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes overflow {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -412,21 +285,14 @@ img {
 .overflow {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 100;
   position: fixed;
   background-color: #fff;
   visibility: hidden;
-  -webkit-animation: onLoad 2.5s;
-          animation: onLoad 2.5s;
+  animation: onLoad 2.5s;
 }
 
 .overflow__loader {
@@ -444,43 +310,15 @@ img {
   border-radius: 50%;
   border: 6px solid #9356dc;
   border-color: #9356dc #FF79DA #99E2D0 #FF79DA;
-  -webkit-animation: loader 1.2s linear infinite;
-          animation: loader 1.2s linear infinite;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation: loader 1.2s linear infinite;
 }
 
 @keyframes loader {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes onLoad {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  80% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
+    transform: rotate(360deg);
   }
 }
 
@@ -527,15 +365,13 @@ img {
 }
 
 .carte__heart:hover .carte__heart--outline {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
   opacity: 0;
 }
 
 .carte__heart:hover .carte__heart--full {
   opacity: 1;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .menu-body {
@@ -549,15 +385,9 @@ img {
 
 .menu-body__header {
   padding: 1rem 2rem 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-body__header__title {
@@ -567,16 +397,13 @@ img {
 }
 
 .menu-body__main {
-  display: -ms-grid;
   display: grid;
 }
 
 @media (min-width: 1000px) {
   .menu-body__main {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
   }
 }
 
@@ -603,24 +430,18 @@ img {
 }
 
 .cards__food-card {
-  -webkit-animation: slide-up 1s both;
-          animation: slide-up 1s both;
+  animation: slide-up 1s both;
   background-color: white;
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;
-  -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   cursor: pointer;
 }
 
@@ -629,8 +450,7 @@ img {
 }
 
 .cards__food-card:hover .food-card__validation__check i {
-  -webkit-animation: rotate 0.5s 0.1s;
-          animation: rotate 0.5s 0.1s;
+  animation: rotate 0.5s 0.1s;
 }
 
 .cards__button {
@@ -655,14 +475,12 @@ img {
   color: white;
   background-color: #686868;
   cursor: pointer;
-  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(175deg, #ff79da, #9356dc);
 }
 
 .violet__button:hover {
-  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
 }
 
 .violet__button a {
@@ -673,9 +491,7 @@ img {
 .food-card__texts {
   white-space: nowrap;
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .food-card__texts__title {
@@ -697,17 +513,10 @@ img {
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transition-duration: .5s;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
   padding-right: 30px;
 }
 
@@ -715,16 +524,9 @@ img {
   background-color: #99e2d0;
   margin: -1rem -5rem -1rem 0rem;
   width: 4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
   display: flex;
 }
 
@@ -732,37 +534,27 @@ img {
   height: 1.6rem;
   width: 1.6rem;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 100px;
   color: #99e2d0;
 }
 
 .food-card__validation__check i {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .cards:nth-child(1) .cards__food-card {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .cards:nth-child(2) .cards__food-card {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .cards:nth-child(3) .cards__food-card {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .footer {
